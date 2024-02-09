@@ -1,0 +1,318 @@
+import 'package:clay_containers/constants.dart';
+import 'package:clay_containers/widgets/clay_container.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:line_icons/line_icon.dart';
+import 'package:line_icons/line_icons.dart';
+
+class Test extends StatelessWidget {
+  static String id = 'Test';
+
+  const Test({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: const Color(0xff333333),
+        body: Center(
+          child: Column(
+            children: [
+              const Padding(
+                padding: EdgeInsets.only(top: 130.0, bottom: 30.0),
+                child: ClayContainer(
+                  color: Color(0xff333333),
+                  emboss: true,
+                  height: 280,
+                  width: 280,
+                  borderRadius: 200,
+                  child: Stack(
+                  
+
+                    children: [
+                      
+                      Center(
+                        child: ClayContainer(
+                          color: Color(0xff333333),
+                          height: 205,
+                          width: 205,
+                          borderRadius: 200,
+                          curveType: CurveType.convex,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+               Padding(
+                padding: EdgeInsets.only(bottom: 25.0),
+                child: Text(
+                  '12 hr 15 min',
+                  style: GoogleFonts.rubik(color: Colors.white, fontSize: 25),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top:11.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 160,
+                      height: 185,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xff333333),
+                          borderRadius: BorderRadius.circular(25),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0xff333333),
+                              offset: Offset(-7.0, -7.0),
+                              blurRadius: 30,
+                              spreadRadius: 0.0,
+                            ),
+                            BoxShadow(
+                              color: Color(0xff151515),
+                              offset: Offset(5.0, 5.0),
+                              blurRadius: 30,
+                              spreadRadius: 0.0,
+                            ),
+                          ],
+                        ),
+                        child: Container(
+                          width: 160,
+                          height: 185,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff333333),
+                            borderRadius: BorderRadius.circular(25),
+                            gradient: const LinearGradient(
+                              begin: Alignment(-0, -1),
+                              end: Alignment(-0, 1.231),
+                              colors: <Color>[
+                                Color.fromARGB(111, 189, 188, 188),
+                                Color(0x23282727),
+                                Color(0x3f282727),
+                                Color.fromARGB(0, 53, 52, 52),
+                                Color.fromARGB(0, 61, 61, 61),
+                                Color.fromARGB(247, 24, 23, 23),
+                              ],
+                              stops: <double>[
+                                0.013,
+                                0.195,
+                                0.31,
+                                0.57,
+                                0.68,
+                                0.866
+                              ],
+                            ),
+                          ),
+                          child:  Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(right: 100.0, top: 30),
+                                child: LineIcon.bed(
+                                 
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 35.0, top: 5),
+                                child: Text(
+                                  'Wake up',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 32.0, top: 5),
+                                child: Text(
+                                  '8:45 AM',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 44.0, top: 5),
+                                child: Text(
+                                  'Tomorrow',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                        width: 30), // Adjust the space between the containers
+                    // Duplicate the first container
+                    Center(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xff333333),
+                          borderRadius: BorderRadius.circular(25),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0xff333333),
+                              offset: Offset(-7.0, -7.0),
+                              blurRadius: 30,
+                              spreadRadius: 0.0,
+                            ),
+                            BoxShadow(
+                              color: Color(0xff151515),
+                              offset: Offset(5.0, 5.0),
+                              blurRadius: 30,
+                              spreadRadius: 0.0,
+                            ),
+                          ],
+                        ),
+                        child: Container(
+                          width: 160,
+                          height: 185,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff333333),
+                            borderRadius: BorderRadius.circular(25),
+                            gradient: const LinearGradient(
+                              begin: Alignment(-0, -1),
+                              end: Alignment(-0, 1.231),
+                              colors: <Color>[
+                                Color.fromARGB(111, 189, 188, 188),
+                                Color(0x23282727),
+                                Color(0x3f282727),
+                                Color.fromARGB(0, 53, 52, 52),
+                                Color.fromARGB(0, 61, 61, 61),
+                                Color.fromARGB(247, 24, 23, 23),
+                              ],
+                              stops: <double>[
+                                0.013,
+                                0.195,
+                                0.31,
+                                0.57,
+                                0.68,
+                                0.866
+                              ],
+                            ),
+                          ),
+                          child: const Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(right: 100.0, top: 30),
+                                child: LineIcon.bell(
+                                 
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 35.0, top: 5),
+                                child: Text(
+                                  'Wake up',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 32.0, top: 5),
+                                child: Text(
+                                  '8:45 AM',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 8),
+                              Padding(
+                                padding: EdgeInsets.only(right: 44.0, top: 5),
+                                child: Text(
+                                  'Tomorrow',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 50),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color(0xff333333),
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0xff333333),
+                        offset: Offset(-7.0, -7.0),
+                        blurRadius: 30,
+                        spreadRadius: 0.0,
+                      ),
+                      BoxShadow(
+                        color: Color(0xff151515),
+                        offset: Offset(5.0, 5.0),
+                        blurRadius: 30,
+                        spreadRadius: 0.0,
+                      ),
+                    ],
+                  ),
+                  child: Container(
+                    width: 360,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: const Color(0xff333333),
+                      borderRadius: BorderRadius.circular(15),
+                      gradient: const LinearGradient(
+                        begin: Alignment(-0, -1),
+                        end: Alignment(-0, 1.231),
+                        colors: <Color>[
+                          Color.fromARGB(111, 189, 188, 188),
+                          Color(0x23282727),
+                          Color(0x3f282727),
+                          Color.fromARGB(0, 53, 52, 52),
+                          Color.fromARGB(0, 61, 61, 61),
+                          Color.fromARGB(247, 24, 23, 23),
+                        ],
+                        stops: <double>[0.013, 0.195, 0.31, 0.57, 0.68, 0.866],
+                      ),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Edit Sleep Schedule in health',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 204, 109, 62),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
